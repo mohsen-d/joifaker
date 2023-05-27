@@ -6,7 +6,7 @@ const options = {
   count: 10,
 };
 
-module.exports = function (schema, count = 10, useFaker = false) {
+module.exports.generate = function (schema, count = 10, useFaker = false) {
   options.useFaker = useFaker;
   options.count = count;
 
