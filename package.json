@@ -1,0 +1,34 @@
+{
+  "name": "joifaker",
+  "version": "1.0.0",
+  "description": "Generate fake data using faker and joi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fake",
+    "joi",
+    "faker",
+    "schema",
+    "populating",
+    "data"
+  ],
+  "files": [
+    "LICENSE",
+    "Readme.md",
+    "index.js"
+  ],
+  "author": {
+    "name": "Mohsen Dorparasti",
+    "email": "dorparasti@gmail.com"
+  },
+  "homepage": "https://github.com/mohsen-d/joifaker",
+  "bugs": {
+    "url": "https://github.com/mohsen-d/joifaker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohsen-d/joifaker.git"
+  }
+}
