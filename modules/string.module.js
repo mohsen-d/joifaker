@@ -1,7 +1,5 @@
 const data = require("../data/string.data");
 const utils = require("./utils.module");
-const crypto =
-  typeof window !== "undefined" ? window.crypto : require("crypto");
 
 let faker;
 
@@ -42,7 +40,7 @@ const formats = {
       `${utils.randomString(data.emails[0])}@${utils.randomString(
         data.emails[1]
       )}.${utils.randomString(data.emails[2])}`,
-    guid: () => crypto.utils.randomUUID(),
+    guid: () => generateGuid(),
     ip: () =>
       `${utils.randomNumber(null, 0, 255)}.${utils.randomNumber(
         null,
@@ -120,3 +118,11 @@ const processRules = {
       ? (str += data.defaultString.substring(0, r.args.limit - str.length))
       : str,
 };
+
+function generateGuid() {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
+    const r = (Math.random() * 16) | 0,
+      v = c == "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}

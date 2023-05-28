@@ -1,6 +1,6 @@
 {
   "name": "joifaker",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Generate fake data using faker and joi",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,9 @@
   "files": [
     "LICENSE",
     "Readme.md",
-    "index.js"
+    "index.js",
+    "modules",
+    "data"
   ],
   "author": {
     "name": "Mohsen Dorparasti",
